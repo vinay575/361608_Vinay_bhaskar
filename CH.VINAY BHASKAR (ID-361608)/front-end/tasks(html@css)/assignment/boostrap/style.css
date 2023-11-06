@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+.body{
+     margin: 0px;
+    padding: 0px;
+    background-color:#f5c0bc;
+
+}
+
+
+img{
+    height:920px;
+}
+.navbar{
+    height:100px;
+}
+.cont{
+    height:700px;
+}
+.secton2{
+   position:relative;
+    
+}
+
+
+.colum{
+    position:relative;
+    top:250px;
+    display:flex;
+    flex-direction:column;
+}
+
+.image{
+    width:500px;
+    height:500px;
+}
+.section3{
+    
+}
+.textl{
+    background-color:#f5c0bc;
+}
+
+.secton3{
+    background-color:#656770;
+    color:white;
+}

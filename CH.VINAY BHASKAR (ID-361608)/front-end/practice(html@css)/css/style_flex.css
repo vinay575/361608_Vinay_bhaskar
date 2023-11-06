@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    padding: 0px;  
+    gap:25px;
+    display: flex;
+    
+}
+
+.container{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+}
+.container1{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+.container2{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+.container8{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.container9{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.container10{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+  align-items: center;
+}
+.container11{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+  align-items: stretch;
+}
+.container12{
+    border: 2pt solid rgb(221, 21, 21);
+    width: 30vw;
+   height: 10vh;
+   display: flex;
+   flex-direction: row;
+  align-items: flex-end;
+}
+
+
+.container3{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+}
+
+.container4{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.container5{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.container6{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+.container7{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.container13{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+}
+
+
+.container14{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+
+.container15{
+    border: 2pt solid rgb(216, 27, 27);
+    width: 30vw;
+   height: 30vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+img{
+    width: 5vw;
+    border: 1pt solid black;
+}

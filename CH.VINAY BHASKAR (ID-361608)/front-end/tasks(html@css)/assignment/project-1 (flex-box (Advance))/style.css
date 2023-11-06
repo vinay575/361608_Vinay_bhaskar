@@ -1,0 +1,505 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+  }
+
+body{
+  margin:0;
+  padding:0;
+
+}
+/*------------------------------background for first section-------------------------*/
+.fst_section{
+    background-color:white;
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(90deg,#FF9999, #66B2FF, #B2FF66, #33FF99 , #00FFFF,  #C0C0C0);
+    background-size:300% 300%;
+    animation: color 12s ease-in-out infinite;
+    
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position:100% 50%;
+  }
+  100%{
+    background-position:0 50%;
+  }
+}
+/*-----------------------------------------nav bar section------------------------*/
+.head_bg{
+background-image:url(images/header.jpg);
+background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow:hidden;
+  
+}
+
+header{
+  position:relative;
+  margin: 15px ;
+  padding:10px;
+  background:rgba(0, 0, 0,.5);
+  border-radius:10px;
+  
+}
+
+.logo{
+  color:white;
+  height:30px;
+  font-size:30px;
+  line-height:30px;
+  padding:0 10px;
+  text-align:center;
+  text-decoration:none;
+  float:left;
+  margin-top:20px;
+}
+
+nav{
+  float:right;
+}
+
+.clearfix{
+  clear:both;
+}
+
+nav ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+nav ul li {
+  list-style:none;
+
+}
+
+nav ul li a{
+  display:block;
+  margin:10px 0;
+  padding:1px 20px;
+  text-decoration:none;
+  color:white;
+}
+
+
+.logo:hover{
+  color: #43f4c2;
+  border:1px solid;
+  border-color:#1ad9cf;
+  border-radius:10px; 
+  
+}
+
+nav ul li a:hover{
+  color: #43f4c2; 
+}
+
+.nav-images{
+	width:30px;
+	margin-left:5px;
+	
+}
+
+
+@media (max-width :1200px){
+  header{
+    margin:20px;
+
+  }
+}
+@media (max-width :768px){
+  .navbar{
+    display:block;
+    width:40px;
+    height:40px;
+    margin:10px;
+    float:right;
+    cursor:pointer;
+    text-align:center;
+    font-size:30px;
+    color:red; 
+  }
+
+  .navbar:before{
+    content: '\f0c9';
+    font-family:fontAwesome;
+    line-height:30px;
+  }
+  nav{
+    display:none;
+  }
+  
+}
+/*----------------------------------------image_slider section ------------------*/
+.image_ct{
+  margin-left:150px;
+  margin-right:150px;
+  padding:30px;
+}
+
+.image-container{
+  position:relative;
+  width:100%;
+  height:75vh;
+  overflow:hidden;
+  
+}
+
+.image-container .slider{
+  position:absolute;
+  top:0;
+  left:0;
+  width:800%;
+  height:110%;
+  display:flex;
+  animation:animate 20s linear infinite;
+  }
+  
+  .image-container .slider .slide{
+    position:relative;
+    width:20%;
+    height:100%;
+    
+  }
+  .image-container .slider .slide .caption-text{
+    position:absolute;
+    bottom:60px;
+    left:60px;
+    right:60px;
+    padding:30px;
+    background:rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+  }
+  .image-container .slider .slide .caption-text h1{
+    margin:0;
+    padding:0;
+    color:white;
+    font-size:30px;
+  }
+  .image-container .slider .slide .caption-text p{
+    margin:0;
+    padding:0;
+    color:white;
+    font-size:18px;
+  }
+
+  .image-container .slider .slide1{
+    background-image: url("images/Taj Mahal.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide2{
+    background-image: url("images/petra jordan.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide3{
+    background-image: url("images/Machu Picchu.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide4{
+    background-image: url("images/Great Wall of China.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide5{
+    background-image: url("images/Colosseum.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide6{
+    background-image: url("images/Christ the Redeemer.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+  .image-container .slider .slide7{
+    background-image: url("images/Chichén Itzá.jpg");
+    background-size:cover;
+    background-position:center;
+  }
+
+@keyframes animate{
+  6%{ left:-0.1;}
+  18%{ left:-0.1;}
+  24%{ left:-100%;}
+  30%{ left:-100%;}
+  36%{ left:-200%;}
+  42%{ left:-200%;}
+  48%{ left:-300%;}
+  54%{ left:-300%;}
+  60%{ left:-400%;}
+  66%{ left:-400%;}
+  72%{ left:-500%;}
+  78%{ left:-500%;}
+  84%{ left:-600%;}
+  90%{ left:-600%;}
+  96%{ left:-700%;}
+  100%{ left:-700%;}
+}
+
+@media (max-width :750px){
+  .image-container .slider .slide .caption-text{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    right:20px;
+    padding:20px;
+  }
+  .image-container .slider .slide .caption-text h1{
+    margin:0 0 10px;
+    padding:0;
+    color:white;
+    font-size:30px;
+  }
+  .image-container .slider .slide .caption-text p{
+    color:white;
+    font-size:18px;
+  }
+}
+.hel{
+  overflow:hidden;
+  font-size:40px;
+  text-align:center;
+}
+
+/* --------------------card-section---------------------------------------------------*/
+
+
+.section-card{
+  display:flex;
+  justify-content:center;
+  min-height:100vh;
+  background-color:#fabd6e;
+  }
+
+  .container-card{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:100px 50px;
+    padding:60px 50px;
+  }
+  .container-card .card{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    width:320px;
+    height:300px;
+    background:black;
+    border-radius:20px;
+    transition:0.5s;
+    margin-top:50px
+  }
+  .container-card .card:hover{
+    transform:scale(1.04);
+   
+
+  }
+
+  .container-card .card .imgbx{
+    position:absolute;
+    top:20px;
+    width:290px;
+    height:200px;
+    background:blue;
+    border-radius:10px;
+    overflow:hidden;
+  }
+
+  .container-card .card:hover .imgbx{
+    top:-100px;
+    scale:0.75;
+    border-radius:10px;
+    border:1px solid black;
+  }
+
+  .container-card .card .imgbx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+
+  .container-card .card .content{
+    position:absolute;
+    top:260px;
+    width:100%;
+    padding:0 30px;
+    overflow:hidden;
+    height:31px;
+    text-align:center;
+    color:blue;
+    transition:0.5s;
+  }
+
+  .container-card .card:hover .content{
+    top:100px;
+    height:250px;
+    overflow:hidden;
+  }
+  .container-card .card .content h2{
+    font-size:1.5rem;
+    color:#41c2fa;
+  }
+
+  .container-card .card .content p{
+    color:#f57187;
+    
+  }
+/*----------------------------------content-section-----------------------*/
+
+.head_tx{
+  background:#272b36;
+  display:flex;
+  justify-content:center;
+  text-align:justify;
+  overflow:hidden;
+  
+}
+
+.wrapper{
+  padding:30px 0px;
+  display:flex;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  overflow:hidden;
+  position:relative;
+  transition:0.2s;
+}
+
+.text_img{
+width:320px;
+ 
+}
+
+.text_box{  
+   color:white;
+   border:1px ;
+   border-left:0px;
+  width:900px;   
+}
+
+.wrapper span{
+  position:absolute;
+  display:block;
+  transition:0.2s;
+    margin-top:10px;
+  
+  }
+  .wrapper:hover {
+    height:35vh;
+    transform:scale(1.04);
+  }
+.wrapper:hover span:nth-child(1){
+left:100%;
+transition:1s;
+
+}
+
+.wrapper span:nth-child(1){
+  top:0;
+  left:-100%;
+  width:100%;
+  height:5px;
+  background:linear-gradient(90deg,transparent,#2196f3)
+}
+
+.wrapper:hover span:nth-child(3){
+  right:100%;
+  transition:1s;
+  transition-delay:0.5s;
+  }
+  
+  .wrapper span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:5px;
+    background:linear-gradient(270deg,transparent,#2196f3)
+  }
+
+  .wrapper:hover span:nth-child(2){
+    top:100%;
+    transition:1s;
+    transition-delay:0.25s;
+    }
+    
+    .wrapper span:nth-child(2){
+      left:0;
+      bottom:-100%;
+      width:2px;
+      height:100%;
+      background:linear-gradient(180deg,transparent,#2196f3)
+    }
+    .wrapper:hover span:nth-child(4){
+      bottom:100%;
+      transition:1s;
+      transition-delay:0.75s;
+      }
+      
+      .wrapper span:nth-child(4){
+        bottom:-100%;
+        left:0;
+        width:2px;
+        height:100%;
+        background:linear-gradient(360deg,transparent,#2196f3)
+      }
+    
+
+.text_box h2{
+    font-size:25px;
+    color:#07f7a3;
+}
+
+.text_box p{
+  font-size:20px;
+  color:#ffffff;
+}
+/*-------------------------------footer_section-----------------------------*/
+
+.footer{
+  background-image:url(images/foot.jpg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 20vh;
+ 
+}
+
+
+.span{
+  color:red;
+}
+
+.foot{
+  color:white;
+  position:absolute;
+  top:30%;
+  left:40%;
+  font-size:20px
+}
+.small{
+  position:absolute;
+  left:40%;
+}
+.name{
+  color:black;
+   font-weight:bold;
+}
