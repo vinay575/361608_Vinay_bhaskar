@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+    </head>
+    <body>
+        <input type="text" placeholder="Time" onchange="datetime()" id="time">
+        <select id="jsDate" onchange="datetime()">
+            <option value="ISO">ISO</option>
+            <option value="UTC">UTC</option>
+            <option value="LOCAL">LOCAL</option>
+        </select>
+        <input type="text" placeholder="...." id="result" readonly style="width: 300px;"> 
+    
+        <script>
+            function datetime() {
+                var input = document.getElementById("time").value;
+                var time = document.getElementById("result");
+    
+                var today = new Date();
+                var year = today.getFullYear();
+                var month = today.getMonth() + 1; 
+                var day = today.getDate();
+    
+                //array Destructuring  //Initializer  //Split the input into hours and minutes
+                var [hours, minutes] = input.split(":");
+                                       
+                
+                var inputTime = new Date(year, month - 1, day, hours, minutes);
+    
+                if (document.getElementById('jsDate').value == "ISO") {
+                    time.value = inputTime.toISOString();
+                } else if (document.getElementById('jsDate').value == "UTC") {
+                    time.value = inputTime.toUTCString();
+                } else if (document.getElementById('jsDate').value == "LOCAL") {
+                    time.value = inputTime.toLocaleString();
+                }
+            }
+        </script>
+    </body>
+    </html>
+

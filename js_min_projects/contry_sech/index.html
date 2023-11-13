@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        #search-bar {
+            width: 300px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        #country-list {
+            list-style: none;
+            width: 280px;
+            margin: 0;
+            padding: 0;
+        }
+
+        #country-list li {
+            border: 1px solid red;
+            padding: 5px;
+            margin: 0;
+            display: none;
+        }
+
+       
+    </style>
+      </head>
+      <body>
+      
+         <div>
+          <select id="countries">
+          <option value="Switzerland" >Switzerland</option> 
+          <option value="Canada" >Canada</option>
+          <option value="Sweden">Sweden</option>
+          <option value="Australia">Australia</option>
+          <option value="United States">United States</option>
+          <option value="Japan">Japan</option>
+          <option value="Germany">Germany</option>
+          <option value="New Zealand">New Zealand</option>
+          <option value="United Kingdom">United Kingdom</option>
+          <option value="Netherlands">Netherlands</option>
+          <option value="Norway">Norway</option>
+          <option value="Denmark">Denmark</option>
+          <option value="France">France</option>
+          <option value="Finland">Finland</option>
+          <option value="Italy">Italy</option>
+          <option value="Singapore">Singapore</option>
+          <option value="Spain">Spain</option>
+          <option value="Belgium">Belgium</option>
+          <option value="United Arab Emirates">United Arab Emirates</option>
+          <option value="China">China</option>
+       </select>
+       <input type="text" id="demo" name="country" readonly  style="width:144px;">
+       </div>
+       
+      
+      <input type="text" id="search-bar" placeholder="Search for a country..." oninput="updateList()">
+       <ul id="country-list">
+          <li>Switzerland.</li>
+          <li>Canada.</li>
+          <li>Sweden.</li>
+          <li>Australia.</li>
+          <li>United States.</li>
+          <li>Japan.</li>
+          <li>Germany.</li>
+          <li>New Zealand.</li>
+          <li>United Kingdom.</li>
+          <li>Netherlands.</li>
+          <li>Norway.</li>
+          <li>France.</li>
+          <li>Denmark.</li>
+          <li>Finland.</li>
+          <li>Italy.</li>
+          <li>Singapore.</li>
+          <li>Spain.</li>
+          <li>Belgium.</li>
+          <li>United Arab Emirates.</li>
+          <li>China.</li>
+       </ul>
+      
+      
+      
+          
+      <script>
+          document.getElementById("countries").onchange = function () {
+              document.getElementById("demo").value = this.value;
+          }
+        
+      var searchBar = document.getElementById("search-bar");
+      var countryList = document.getElementById("country-list");
+      
+      
+      var countries = [
+         "Switzerland.",
+          "Canada.",
+          "Sweden.",
+          "Australia.",
+          "United States.",
+          "Japan.",
+          "Germany.",
+          "New Zealand.",
+          "United Kingdom.",
+          "Netherlands.",
+         "Norway.",
+          "France.",
+          "Denmark.",
+          "Finland.",
+          "Italy.",
+          "Singapore.",
+          "Spain.",
+          "Belgium.",
+          "United Arab Emirates.",
+          "China.",
+      ];
+      
+      
+      function updateList() {
+          var searchValue = searchBar.value.toLowerCase();
+          countryList.innerHTML = "";
+      
+          for (var i = 0; i < countries.length; i++) {
+              var country = countries[i].toLowerCase();
+              
+              if (country.includes(searchValue)) {
+                  var li = document.createElement("li");
+                  li.textContent = countries[i];
+                  countryList.appendChild(li);
+                  li.style.display = "block"; 
+              }
+          }
+      }
+      
+      
+      </script>
+      
+    
+</body>
+</html>

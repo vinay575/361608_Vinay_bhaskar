@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //flatten array without using inbuilt methods
+       //using for of
+       var num=[1,2,[3,4],5,6,[7,8],9,10];
+       var result=[];
+       
+          function flatten_array(arr){
+            for(ele of arr){          //for...of  is used to iterate (process of repeatedly executing a set of statements or operations.)       
+                if(Array.isArray(ele)){  //(Array.isArray) method to check if element is array or not if yes retturns true
+                    flatten_array(ele)   
+                }
+                else{
+                    result.push(ele)
+                }
+            }
+          }
+          flatten_array(num);
+          console.log (result);
+    </script>
+   
+<script>
+//flat
+ var num = [1, 2, [3, 4], 5, 6, [7, 8], 9, 10];
+ let arr = num.flat(2);
+ console.log(arr)
+ 
+</script>
+</body>
+</html>

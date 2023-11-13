@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var a=new Date();
+    document.write(a+"<br>");
+    var a = new Date("2022-03-25");
+    document.write(a+"<br>");
+    var a = new Date("2023-03-25");
+    document.write(a+"<br>");
+    var a = new Date(2023, 11);
+    document.write(a+"<br>");
+    var a = new Date(2023, 11, 10);
+    document.write(a+"<br>");
+    var a = new Date(2023, 11, 10, 12 );
+    document.write(a+"<br>");
+    var a = new Date(2023, 11, 10, 12, 10);
+    document.write(a+"<br>");
+    var a = new Date(2023, 11, 10, 12, 10, 12,);
+    document.write(a+"<br>");
+    var a = new Date(1000000000000);
+    document.write(a+"<br>");
+    var a = new Date(-1000000000000);
+    document.write(a+"<br>");
+    var a = new Date(24 * 60 * 60 * 1000);
+    document.write(a+"<br>");
+    var a = new Date(0);
+    document.write(a+"<br>");
+    var a = new Date();
+    var b = a.toString();
+    document.write(b+"<br>");
+    var a = new Date();
+    var b = a.toDateString();
+    document.write(b+"<br>");
+    var a = new Date();
+    var b = a.toISOString();
+    document.write(b+"<br>");
+    var a = new Date();
+    var b = a.toUTCString();
+    document.write(b+"<br>");
+    </script>
+
+    <!--JavaScript Date Formats-->
+
+    <script>
+    var a = new Date("2023-12-10");
+    document.write(a+"<br>");
+    var a = new Date("2023-12");
+    document.write(a+"<br>");
+    var a = new Date("2023");
+    document.write(a+"<br>");
+    var a = new Date("2023-12-10T12:00:00")
+    document.write(a+"<br>");
+    var a = new Date ("2023-12-10T12:00:00-06:00")
+    document.write(a+"<br>");
+    var a=Date.parse("march 21, 2021")
+    document.write(a+"<br>")
+    </script>
+
+    <!--get-methods-->
+
+    <script>
+      var a=new Date()
+      var b= a.getFullYear()
+      document.write(b+"<br>")
+      var a = new Date("2015-11-11")
+      var b = a.getMonth() +1;
+      document.write(b+"<br>")
+      var a = new Date("2015-11-11")
+      var b = a.getDate()
+      document.write(b+"<br>")
+      var a = new Date("2015-11-11")
+      var b = a.getHours()
+      document.write(b+"<br>")
+      var a=new Date("2023-12-23")
+      var b=a.getMinutes()
+      document.write(b+"<br>")
+      var a=new Date("2023-12-23")
+      var b=a.getMilliseconds()
+      document.write(b+"<br>")
+      var a=new Date("2023-12-23")
+      var b=a.getSeconds()
+      document.write(b+"<br>")
+      var a=new Date("2023-12-23")
+      var b=a.getTime()
+      document.write(b+"<br>")
+    </script>   
+    <!--set-methods-->
+    <script>
+      var d=new Date();
+      d.setFullYear(2024);
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setMonth(8)
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setDate(7)
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setHours(9)
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setMinutes(30)
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setSeconds(45)
+      document.write(d+"<br>");
+      var d=new Date();
+      d.setMilliseconds(600)
+      document.write(d+"<br>");
+    </script> 
+</body>
+</html>

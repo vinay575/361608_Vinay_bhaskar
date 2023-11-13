@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //escape sequences
+      
+    var x = "hello man how\tare you";
+    console.log(x);
+    
+    var x = "hello man how\nare you";
+    console.log(x);
+    
+    //string methods
+    
+    var x = "apple, mango, banana";
+    document.write(x.length +"<br>")
+    
+    var x = "apple, mango, banana";
+    var b = x.slice(6,11)
+    document.write(b+"<br>")
+    
+    var y = "apple, mango, banan, apple";
+    var q = x.replaceAll("apple", "hi")
+    document.write(q+"<br>")
+    
+    var x = "apple, mango, banana";
+    var b = x.replace("apple", "ball")
+    document.write(b+"<br>")
+    
+    var x = "apple, mango, banana";
+    document.write(x.charAt(2)+"<br>")
+    
+    var x = "apple, mango, banana";
+    var b = x.toUpperCase();
+    document.write(b+"<br>")
+    
+    var x = "APPLE, MANGO, BANANA";
+    var b = x.toLowerCase();
+    document.write(b+"<br>")
+    
+    var x = "APPLE";
+    var b ="MANGO";
+    var c = x.concat (b);
+    document.write(c+"<br>")
+    
+    var text1 = "     hello world     "
+    var text2= text1.trim();
+    console.log(text2)
+    
+    var x = "     hello world   "
+    var b = x.trimStart();
+    console.log(b)
+    
+    var x = "     hello world   "
+    var b = x.trimEnd();
+    console.log(b)
+    
+    var x = "21"
+    var b = x.padStart(6,"x");
+    console.log(b)
+    
+    var x = "21"
+    var b = x.padEnd(6,"x");
+    console.log(b)
+    
+    var x="hello"
+    var y=x.charAt(3)
+    console.log(y)
+    
+    var x="hello,bollo,fello"
+    var c= x.split("")
+    console.log(c)
+    
+    // string search
+    
+     var x = "hello how are you "
+     var b = x.indexOf ("how")
+     console.log(b)
+    
+     var x = "hello how are you "
+     var b = x.lastIndexOf("are")
+     console.log(b)
+    
+     var x = "hello how are you "
+     var b = x.search("are")
+     console.log(b)
+    
+     var x = "hello how are you "
+     var b = x.match("are")
+     console.log(b)
+    
+     var x = "hello how are you are all "
+     var b = x.includes("are")
+     console.log(b)
+    
+     var x = "hello how are you are all "
+     var b = x.startsWith("hello")
+     console.log(b)
+    
+    
+     let text = "Hello world, welcome to the universe.";
+    var text2 = text.endsWith("world");
+    console.log (text2)
+    </script>
+    
+</body>
+</html>

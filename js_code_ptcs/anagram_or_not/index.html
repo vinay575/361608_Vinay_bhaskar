@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <script>
+  //find out if two strings are an anagram of each other
+  var name1 = prompt("Enter first name");
+  var name2 = prompt("Enter second name");
+
+function checkAnagram(name1, name2) {
+    let n1 = name1.length;
+    let n2 = name2.length;
+
+    if (n1 !== n2) {
+        return false;
+    } else {
+        for (let i = 0; i < n1; i++) {
+            if (name1[i] === name2[i]) {
+                continue;
+            } else {
+                return alert("The names you have entered are not anagram of each other ");
+            }
+        }
+        return alert("The names you have entered are anagram of each other ");
+    }
+}
+
+console.log(checkAnagram(name1, name2));
+</script>
+    
+</body>
+</html>

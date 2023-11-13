@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Sort an array of strings by their length without using the sort function
+        let arr = ["hello", "world", "how are you?", "i am fine"];
+
+        for (var i = 0; i < arr.length ; i++) {
+        for (var j = i ; j < arr.length; j++) {
+        if (arr[j].length > arr[i].length) {
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+    }
+}
+
+console.log(arr);
+
+    </script>
+</body>
+</html>
