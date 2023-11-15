@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // js numbers
+      var a = 10.2;
+      var b = 3;
+      c=a+b
+      document.write(c+"<br>")
+  
+      var a = "10.2";
+      var b = "3";
+      c=a+b
+      document.write(c+"<br>")
+
+    //Precision value is accurate up tp 15 only
+    var a = 99999999999999;
+    var b =9999999999999999; 
+      document.write(a+"<br>")
+      document.write(b+"<br>")
+    
+    //floating points are not accurate so 
+    var a = 0.2 + 0.1; 
+    document.write(a+"<br>")
+        //alternative is *10 for each number and / by 10 
+        var a = (0.2*10 + 0.1*10)/10; 
+    document.write(a+"<br>")
+    // string numbers
+    var a = 10;
+    var b = 20;
+    var z = "The result is: " + a + b;
+    document.write(z+"<br>")
+
+    var a = "10";
+    var b = "20";
+    var z =   a /b
+    document.write(z+"<br>")
+    var a = 10;
+    var b = "20";
+    var z =   a /b
+    document.write(z+"<br>")
+    //NAN
+    var a = 100;
+    var b = "APPLE";
+    var z =   a /b
+    document.write(z+"<br>")
+    var a = 100/"apple"
+    var b = isNaN(a)
+    document.write(b+"<br>")
+    //number methods
+
+    var a = 100
+    a.toString()
+    document.write(a+"<br>")
+    // toExponentia
+    var x = 10.97685;
+    b=x.toExponential()
+    document.write(b+"<br>")
+    var x = 1097685;
+    b=x.toExponential(2)
+    document.write(b+"<br>")
+    var x = 10.97685;
+    b=x.toExponential(4)
+    document.write(b+"<br>")
+//tofixed
+    var x = 10.97685;
+    x.toFixed()
+    document.write("hello"+x+"<br>")
+    var x = 10.97685;
+    b=x.toFixed(2)
+    document.write(b+"<br>")
+    var x = 10.97685;
+    b=x.toFixed(4)
+    document.write(b+"<br>")
+    //toPrecision
+    var x = 10.97685;
+    x.toPrecision()
+    document.write(x+"<br>")
+    var x = 10.47685;
+    b=x.toPrecision(2)
+    document.write(b+"<br>")
+    var x = 10.85685;
+    b=x.toPrecision(4)
+    document.write(b+"<br>")
+       
+</script>    
+</body>
+</html>
