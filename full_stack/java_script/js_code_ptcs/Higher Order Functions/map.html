@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //map methd it is used for arrays , to modify data in array and create a  another  new array
+       //example-1
+         var one =[1,32,21,45,2,11]
+         var two= one.map(function(value){    //map method .map() it returns a function inside it map(function(ele,index,arr)) 
+             return value * 2;                // in this example we used anonmus funcion
+        })  
+        console.log(two)                              
+
+        //example-2 
+        const radiusArr = [1, 6, 3, 5, 8];   //array 
+
+         function area(r) {                   //function 
+         return Math.PI * r * r;
+         };
+
+         console.log(radiusArr.map(area));    //function called inside map 
+
+    </script>
+</body>
+</html>

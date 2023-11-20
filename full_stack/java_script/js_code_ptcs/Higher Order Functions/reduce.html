@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+        //example-->1
+     const radiusArr = [1, 6, 3, 5, 8];   
+     function sumOfArr(res, curr){
+	 res = res + curr;
+	 return res;
+     }
+     console.log(radiusArr.reduce(sumOfArr));
+
+      //example-->2
+     function maxOfArr(res, curr){
+	 if(curr > res){
+		res = curr;
+	 }
+	 return res;
+     }
+     console.log(radiusArr.reduce(maxOfArr,0));
+    </script>
+</body>
+</html>

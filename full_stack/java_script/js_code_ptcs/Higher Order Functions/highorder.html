@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Higher Order Functions: its a function which take another function as parameter.
+         //1-------------->reciving another function as argument---------------------------------
+         function one(fun){ 
+             fun()            // note :function shuld call with funcionname() 
+         }                    // 1-->function two is takes as parameter "one(two)" for function one 
+                              // 1 a--->parameter fun stores a function two so it should be called as fun()
+           function two (){
+            console.log ("how are you")
+             
+           }
+           one(two)
+
+          //example :
+          var arr=[1,21,2,45,20,5]
+           
+           function square(arr){
+              return arr*arr
+           }
+
+           function cube(arr){
+            return arr*arr*arr
+           }
+
+           function eachelement(arr,operation)  //for each arr what we have to do should taken as function 
+           {                                     // this should take 2 arguments (1)arr-->array name,(2) operation--> it is function 
+            const result=[];                      //empty array 
+             for(ele of arr)                     //each element in array 
+              {  
+                let temp = operation(ele)                              
+             result.push(temp)           //push to result of each element after operaion is performed
+             }    
+             return result                             
+           }      
+           
+           console.log (eachelement(arr,square))   //operation is passed as parameters of (square or cube)     
+           console.log (eachelement(arr,cube))
+
+         //2---------------->return one function in another function -----------------------
+         function one(){ 
+             return two             
+         }                                     
+           function two (){
+            console.log ("how are you")
+           }
+           let fun =one()
+           fun();           
+    </script>
+</body>
+</html>
