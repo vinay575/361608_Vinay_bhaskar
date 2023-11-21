@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+    //map method to concat first name and last name 
+    const users = [
+    {fistname:"sat", lastname:"nav", age:40},
+    {fistname:"rat", lastname:"nav", age:30},
+    {fistname:"bat", lastname:"nav", age:40},
+    {fistname:"cat", lastname:"nav", age:50},
+    {fistname:"mat", lastname:"nav", age:30},
+  ];
+
+  function fullname(user){
+    return user.fistname + " "+ user.lastname;
+  }
+   const names=users.map(fullname);
+   console.log(names);
+
+//filter method to filter ages
+const people = [
+    {fistname:"sat", lastname:"nav", age:40},
+    {fistname:"rat", lastname:"nav", age:30},
+    {fistname:"bat", lastname:"nav", age:40},
+    {fistname:"cat", lastname:"nav", age:50},
+    {fistname:"mat", lastname:"nav", age:30},
+  ];
+    function ages(person){
+        return person.age==40;         
+    }
+    const all_ages=people.filter(ages);
+    console.log(all_ages)
+
+
+
+ </script>
+</body>
+</html>
