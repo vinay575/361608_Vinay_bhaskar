@@ -22,6 +22,22 @@
     console.log(radius.filter(function isOdd(x){return (x%2 != 0)}));
 
      
+const values = [2, 13, 24, 5, 46, 37, 58, 9];
+
+function isPrime(x) {       //a number that can only be divided by itself and 1 without remainders
+    if (x < 2) {
+        return false;
+    }
+    for (let i = 2;i <= Math.sqrt(x); i++) {
+        if (x % i === 0) {                     //x returns sqrt of values 13 sqrt = 3 , so i=2,i=3 its value not 0 so its prime
+            return false;   // x is divisible by i, so it's not prime
+        }
+    }
+    return true; // x is prime
+}
+
+console.log(values.filter(isPrime));
+
 
     </script>
 </body>
