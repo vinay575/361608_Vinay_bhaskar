@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test1">
+
+     </div>
+
+    <div id="test2">
+     <p id="before">this is para one in test 1</p>
+    
+    </div>
+
+    <div id="test3">
+        <p id="remove">this is para one in test 2</p>
+       
+       </div>
+
+       <div id="test4">
+        <p id="childrm">this is para one in test 3</p>
+       
+       </div>
+
+       <div id="test5">
+        <p id="reple">this is para one in test 4</p>
+       
+       </div>
+
+    <script>
+
+         //1 creating and adding element
+       var n = document.createElement("p")             //creating a html element
+       n.innerText="this is paragraph sent by java"   //adding text to created  html element
+       var parent= document.getElementById("test1")  //now getting  id to push created html element
+       parent.appendChild(n)                        //keeping that created element in parent (id)
+       
+       
+       //2 adding element before
+        var o = document.createElement("p")
+        o.innerText="this is another paragraph sent by java "
+        var parent2= document.getElementById("test2")    //geting parent element
+        var parent3= document.getElementById("before")  //get the id name from element  which  before you want to add new element
+        parent2.insertBefore(o,parent3)   //two values .insertBefore(1,2) (1)-->element you have created (2)-->varable name on wich you have accesed that before element
+        
+         //3 removing element
+         var p = document.getElementById("test3") //get id from element which you want  to remove 
+           p.remove()                              //varable name stored in that id and remove it 
+                    // (or)
+                    // any case you can do
+         // if you want to remove the child from parent 
+         var one= document.getElementById("test4")    //geting parent element
+         var two= document.getElementById("childrm")  //get the child element want to remove
+          one.removeChild(two)
+
+        //4 replce an element
+        var k = document.createElement("h1")
+        k.innerText="this is prplaced text "       //first create that element want to replace
+        var a =document.getElementById("reple")    //get element want to replace with
+           a.replaceChildren(k)
+        
+
+
+
+
+    </script>
+</body>
+</html>
