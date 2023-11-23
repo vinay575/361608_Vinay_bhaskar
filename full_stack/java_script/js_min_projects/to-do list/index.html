@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <input id="to_do" type="text" placeholder="To_Do_List">
+            <button id="add" onclick="addItem()">Submit</button>
+        </div>
+        <div id="add_list"></div>
+    </div>
+
+    <script>
+        function addItem() {
+            var input = document.getElementById("to_do");
+            var listContainer = document.getElementById("add_list");
+
+            // Createing a new list item
+            var listItem = document.createElement("li");
+            listItem.textContent = input.value;
+
+            // Append the new item to the list container
+            listContainer.appendChild(listItem);
+
+            // Clear the input field after adding the item
+            input.value = "";
+
+
+        }
+
+    </script>
+</body>
+</html>
