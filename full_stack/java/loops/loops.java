@@ -1,0 +1,39 @@
+class Switch{                                //while loop
+    public static void main (String [] args){
+
+        int i = 1;
+        while(i<=4)
+        {
+            System.out.println("hi"+i);
+            i++;
+        }
+    }
+}
+class Switch2{            //inner loop for  while
+    public static void main (String [] args){
+
+        int i = 1;
+        while(i<=4)
+        {                   
+            System.out.println("hi"+i);
+            int j = 1;               // new variable j 
+            while (j<=3) {           //j condition 
+                 System.out.println("this is innerloop"+j);
+                 j++;
+            }                 //next go to outer loop
+            i++;
+        }
+    }
+}
+
+//de while loop
+class Switch3{
+    public static void main (String [] args){
+        int i= 0;
+        do{
+            System.out.println("hi"+i);
+            i++;
+        }
+        while(i<=3);
+}
+}
