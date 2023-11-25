@@ -43,3 +43,13 @@ class type2{                                 //if else if
             System.out.println(c);
     }
 }
+
+class type3{                                 //tenory operator
+    public static void main(String[]args){
+      int a = 20;
+      int result = 0;
+  
+     result=(a>1)?10:20;
+     System.out.println(result);
+
+    }}
