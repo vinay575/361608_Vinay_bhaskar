@@ -16,6 +16,8 @@ public class sup
 {
 public static void main (String [] args){
 
-    A obj = new A(5);    // when we give parameters it invoke Parameterized constructor
+    // A obj = new A(5);    // when we give parameters it invoke Parameterized constructor
+
+     new A(5); //constructor call
 }
 }
