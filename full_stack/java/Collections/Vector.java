@@ -1,3 +1,4 @@
+package full_stack.java.Collections;
 import java.util.Vector;
 //capacity of vector increases upon adding new element it increase size to 100%  10->20->40->80
 class Vprtc {
