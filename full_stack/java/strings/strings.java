@@ -1,3 +1,5 @@
+package full_stack.java.strings;
+
 class stg {
     public static void main(String[] args) {
         // string
