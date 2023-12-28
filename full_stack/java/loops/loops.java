@@ -1,3 +1,6 @@
+package full_stack.java.loops;
+
+
 class Switch{                                //while loop
     public static void main (String [] args){
 
