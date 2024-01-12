@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+<style>
+        body {
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 400px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+  
+      <div >
+           <form action='Registration' method="post">
+           <h2>Register Here</h2>
+         <table>
+          <tr>
+            <td><label>First_Name</label></td>
+             <td><input type='text' placeholder='First_Name' name='First_Name'></td>       
+          </tr>
+          <tr>
+            <td><label>Last_Name</label></td>
+             <td><input type='text' placeholder='Last_Name'' name='Last_Name'></td>       
+          </tr>
+           <tr>
+            <td><label>Phone_No</label></td>
+             <td><input type='text' placeholder='Phone_No' name='Phone_No'></td>       
+          </tr>
+          <tr>
+            <td><label>Address</label></td>
+             <td><input type='text' placeholder='Address' name='Address'></td>       
+          </tr>
+  
+          <tr >
+            <td><label>E-Mail</label></td>
+            <td><input type='email' placeholder='abcdefg@com' name='email'></td>
+          </tr>
+          <tr >
+            <td><label>Password</label></td>
+            <td><input type='password' placeholder='password'  name='password' ></td>
+          </tr>
+
+          <tr >
+            <td><label>Confirm_Password</label></td>
+            <td><input type='password' placeholder='Confirm-password' name='ConformPassword' ></td>
+          </tr>
+
+          <tr >
+          <td ><input type='checkbox'></td>
+           <td><label>I Agree To Terms And Conditions</label></td>
+            
+          </tr>     
+
+          <tr>
+              <td colspan="2" align="center"><input type="submit" value="sign_up" ></td>
+          </tr>
+           
+           </table>
+        </form>
+      </div>
+    
+</body>
+</html>
