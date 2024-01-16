@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dashboard-container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .outline-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+      
+        h3 {
+            margin: 0;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#">Home_page</a>
+          <form action='logout' method="get">
+        <a href="logout">Logout</a>
+        </form>
+      
+    </div>
+ 
+
+
+    <form class="dashboard-container"  action=''  method="post">
+        <table class="outline-table">
+        
+            <tr>
+                <td><input type="radio" name="accountDetails" value="account_no"> Account Number </td>
+            </tr>
+            <tr>
+                <td><p>IFSC Code :</p><hr></td>
+                <td><p>Account Type :</p><hr></td>
+                <td><p>Current Balance :</p><hr></td>
+                <td><p>Last Transaction Date :</p><hr></td>
+            </tr>
+            
+            <tr>
+                <td><input type="radio" name="accountDetails" value="account_no"> Account Number </td>
+            </tr>
+            <tr>
+                <td><p>IFSC Code :</p><hr></td>
+                <td><p>Account Type :</p><hr></td>
+                <td><p>Current Balance :</p><hr></td>
+                <td><p>Last Transaction Date :</p><hr></td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="accountDetails" value="account_no"> Account Number </td>
+            </tr>
+            <tr>
+                <td><p>IFSC Code :</p><hr></td>
+                <td><p>Account Type :</p><hr></td>
+                <td><p>Current Balance :</p><hr></td>
+                <td><p>Last Transaction Date :</p><hr></td>
+            </tr>
+            <tr>
+            <td > <input type="submit" value="Get Details"> </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

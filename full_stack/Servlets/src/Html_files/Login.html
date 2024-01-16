@@ -4,14 +4,17 @@
 <meta charset="ISO-8859-1">
 <title>Login</title>
 <style>
+
         body {
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
+        
+        
 
         div {
-            width: 300px;
+            width: 350px;
             margin: 50px auto;
             padding: 20px;
             background-color: #fff;
@@ -30,8 +33,8 @@
 
         input {
             width: 100%;
-            padding: 8px;
-            margin-bottom: 15px;
+            padding: 10px;
+            margin-bottom: 10px;
             box-sizing: border-box;
         }
 
@@ -39,11 +42,10 @@
             background-color: #4CAF50;
             color: white;
             cursor: pointer;
+            
         }
 
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+     
     </style>
 </head>
 <body>
@@ -59,8 +61,11 @@
             <td><input type='password' placeholder='password'  name='password'  id='password' > </td>
             </tr>
             <tr>
+            <tr>
             <td colspan="2" align="center"><input type="submit" value="Login_in"></td>
-            <td colspan="2" align="center"><a href="Sign_up.html"><input type="button" value="Register"></a><br></td>
+            </tr>
+             <tr>
+            <td colspan="2" align="center"><a href="Sign_up.html"><input type="button" value="Register"></a></td>
             </tr>
         </table>
     </form>

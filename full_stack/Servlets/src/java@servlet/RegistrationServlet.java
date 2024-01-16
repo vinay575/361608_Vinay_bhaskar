@@ -25,10 +25,17 @@ public class RegistrationServlet extends HttpServlet {
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("ConformPassword");
 
+        // Check if any field is empty
+        if (username.isEmpty() || phoneNo.isEmpty() || address.isEmpty() || email.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+            PrintWriter pw = response.getWriter();
+            pw.println("<script>alert('All fields must be filled.'); window.location.href='Sign_up.html';</script>");
+            return;
+        }
+
         // Check if password and confirmPassword match
         if (!password.equals(confirmPassword)) {
             PrintWriter pw = response.getWriter();
-            pw.println("Password and Confirm Password do not match");
+            pw.println("<script>alert('Password and Confirm Password do not match.'); window.location.href='Registration.html';</script>");
             return;
         }
 
